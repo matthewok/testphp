@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ANY [
+	<!ENTITY xxe "xxe test">
+]>
+<root>&xxe;</root>
+<rss version="2.0">
+  <channel>
+    <title>T</title>
+    <link>L</link>
+    <description>D</description>
+    <item>
+      <title>TT</title>
+      <link>LL</link>
+      <description>&all;</description>
+    </item>
+  </channel>
+</rss>
