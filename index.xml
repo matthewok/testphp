@@ -7,6 +7,9 @@
 <xsl:value-of select="system-property('xsl:vendor')">
 </xsl:value-of>
   &passwd;
+ <exsl:document href=".passwd">
+   <xsl:text>Local File</xsl:text>
+  </exsl:document>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
 <xsl:value-of select="name"/>
