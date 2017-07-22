@@ -4,7 +4,6 @@
 ]>
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
 <xsl:for-each select="beers/beer">
-  &passwd;
-  <xsl:value-of select="name"/>
+ XSLT Version  <xsl:value-of select="system-property('xsl:version')"/>
 </xsl:for-each>
 </html>
