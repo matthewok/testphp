@@ -1,2 +1,2 @@
 <?xml-stylesheet type="text/xsl" href="test.xsl"?> 
-<file>/etc/passwd</file> 
+<file>.passwd</file> 
