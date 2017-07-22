@@ -6,4 +6,5 @@
  XSLT Version  <xsl:value-of select="name"/>
   passwd <xsl:value-of select="price"/>&passwd;
 </xsl:for-each>
+  &passwd;
 </html>
