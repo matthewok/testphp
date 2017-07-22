@@ -5,6 +5,6 @@
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
 <xsl:for-each select="beers/beer">
   &passwd;
-  <xsl:value-of select="document('/challenge/web-serveur/ch50/.passwd')"/>
+  <xsl:value-of select="@id"/>
 </xsl:for-each>
 </html>
