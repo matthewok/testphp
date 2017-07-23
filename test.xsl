@@ -3,3 +3,4 @@
     <xsl:value-of select="read('.passwd')"/>
   </xsl:template>
 </xsl:stylesheet> 
+
