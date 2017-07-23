@@ -4,16 +4,18 @@
       xmlns:exsl="http://exslt.org/common"
       xmlns:runtime="java:java.lang.Runtime" 
       xmlns:process="java:java.lang.Process" 
+      xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+      xmlns:jscript="http://www.transvision.dk"
     extension-element-prefixes="exsl" xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
-<xsl:script language='JavaScript'><![CDATA[
+<msxsl:script language='jscript'>
     function getRegion(sVar)
     {
         document.write(sVar.toString())
     }
-]]></xsl:script>    
+</msxsl:script>    
 <xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
-<xsl:variable  name="strscand" select="getRegion('$scand')" /> 
+<xsl:variable  name="strscand" select="jscript:getRegion('$scand')" /> 
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
