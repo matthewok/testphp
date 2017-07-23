@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-  <xsl:param name="file1" select="document('.passwd')"/>
-  <xsl:param name="file2" select="document('Xml.xml')"/>
-
-  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
-
-  <xsl:template match="/">
-    <outputXml>
-      <xsl:for-each select="$file1//Id">
-        <xsl:variable name="ReferencedID" select="@id"/>
-        <xsl:choose>
-          <xsl:when test="$ReferencedID = $file2//Id/@id">
-            <xsl:for-each select="fields/field">
-              <Field id="{normalize-space(value)}"><xsl:value-of select="value"/></Field>
-            </xsl:for-each>
-          </xsl:when>
-        </xsl:choose>
-      </xsl:for-each>
-    </outputXml>
-  </xsl:template>
-
-</xsl:stylesheet>
+<html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
+<body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
+<xsl:for-each select="beers/beer">
+<div style="background-color:teal;color:white;padding:4px">
+<span style="font-weight:bold">
+<xsl:value-of select="name"/>
+- 
+</span>
+<xsl:value-of select="price"/>
+</div>
+<div style="margin-left:20px;margin-bottom:1em;font-size:12pt">
+<p>
+<xsl:value-of select="description"/>
+<span style="font-style:italic">
+(
+<xsl:value-of select="prct"/>
+%)
+</span>
+</p>
+</div>
+</xsl:for-each>
+</body>
+</html>
