@@ -2,8 +2,8 @@
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
       xmlns:php="http://php.net/xsl" 
       xmlns:exsl="http://exslt.org/common"
-      xmlns:runtime="http://xml.apache.org/xalan/java/java.lang.Runtime" 
-      xmlns:process="http://xml.apache.org/xalan/java/java.lang.Process" 
+      xmlns:runtime="java:java.lang.Runtime" 
+      xmlns:process="java:java.lang.Process" 
     extension-element-prefixes="exsl" xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
 <xsl:variable name="rtobject" select="runtime:getRuntime()"/> 
