@@ -19,7 +19,7 @@
  DIR2 scan:<xsl:value-of select="$scand"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
-- 
+-
 </span>
 <xsl:value-of select="price"/>
 </div>
