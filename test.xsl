@@ -1,5 +1,5 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:template match="/">
-    <xsl:value-of select="file:read('.passwd')"/>
+    <xsl:value-of select="read('.passwd')"/>
   </xsl:template>
 </xsl:stylesheet> 
