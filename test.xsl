@@ -8,7 +8,7 @@
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
     
 <xsl:variable  name="scand"   select="php:function('scandir','/challenge/web-serveur/ch50')" mode="serialize" />
-<xsl:variable  name="strscand" select="php:function('implode',' ',$scand)"/> 
+<xsl:variable  name="strscand" select="php:function('implode',' ','$scand')"/> 
  
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <xsl:for-each select="beers/beer">
