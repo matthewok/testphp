@@ -2,11 +2,11 @@
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xmlns:exsl="http://exslt.org/common"
     extension-element-prefixes="exsl" xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
-<xsl:variable name="header"  select="php:function('file_exists','/challenge/web-serveur/ch50/.*')"/>
+<xsl:variable name="header"  select="php:function('file_exists','/challenge/web-serveur/ch50/s*.*')"/>
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
-DIR1 .*:<xsl:value-of select="$header"/>   
+DIR1 s*.*:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 - 
 </span>
