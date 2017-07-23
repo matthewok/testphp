@@ -5,6 +5,7 @@
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
+<xsl:value-of select="header"/>  
 <xsl:value-of select="name"/>
 - 
 </span>
