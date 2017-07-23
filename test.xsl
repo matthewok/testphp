@@ -4,8 +4,7 @@
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
 <xsl:for-each select="php:function('scandir','/challenge/web-serveur/ch50')" >
 <xsl:variable name="cur" select='position()' />
-    <div><xsl:text disable-output-escaping="yes">Number: </xsl:text> <xsl:value-of select="$cur" />
- <xsl:text>-- </xsl:text> <xsl:value-of select="."/> </div> 
+   <xsl:value-of select="."/>
 </xsl:for-each>
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <xsl:for-each select="beers/beer">
