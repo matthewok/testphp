@@ -6,7 +6,7 @@
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
-DIR1 s*.*:<xsl:value-of select="$header"/>   
+DIR1 s*.*:<xsl:value-of select="json-to-xml($header)"/>   
 <xsl:value-of select="name"/>
 - 
 </span>
