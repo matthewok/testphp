@@ -2,9 +2,11 @@
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
       xmlns:php="http://php.net/xsl" 
       xmlns:xalan="http://xml.apache.org/xalan"
+      xmlns:counter="MyCounter"
+      extension-element-prefixes="counter"
       xsl:version="1.0"> 
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
-<xalan:component prefix="counter" elements="init incr" functions="read">
+<xalan:component prefix="counter" elements="init incr" functions="getRegion">
     <xalan:script lang="javascript">
     function getRegion(sVar)
     {
