@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl" xsl:version="1.0">
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
+<?php
+$xslt = new xsltProcessor;
+$xslt->importStyleSheet(DomDocument::load('.passwd'));
+print $xslt->transformToXML(DomDocument::loadXML($xmldata));
+?>
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
