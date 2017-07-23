@@ -8,12 +8,12 @@
 <body style="font-family:Arial;font-size:9pt;background-color:#AABBCC">
     
 <xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
- 
+<xsl:variable  name="strscand" select="php:functionString('impode','$scand')" /> 
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <xsl:for-each select="beers/beer">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
- DIR2 scan:<xsl:value-of select="$scand"/>       
+ DIR2 scan:<xsl:value-of select="$strscand"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
