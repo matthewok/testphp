@@ -10,9 +10,6 @@ xmlns:php="http://php.net/xsl">
  DIR2 count:<xsl:value-of select="$strscand"/>     
  DIR2 scan:<xsl:value-of select="$scand"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
-// <xsl:for-each select="$scand">  
-//    number<xsl:value-of select="position()"/>：<xsl:value-of select="."/>  
-// </xsl:for-each>  
 <xsl:value-of select="name"/>
 -
 </span>
