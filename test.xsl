@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 	xmlns:php="http://php.net/xsl"	
-	xmlns:xalan="http://xml.apache.org/xalan"
+	xmlns:xalan="http://xml.apache.org/xalan-j"
 	xmlns:user="http://www.mac.home">
 	<xalan:component prefix="user" functions="output">
 	<xalan:script lang="javascript">      	
