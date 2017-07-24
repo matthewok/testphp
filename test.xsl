@@ -7,8 +7,8 @@ xmlns:php="http://php.net/xsl">
 <xsl:variable  name="header"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
- DIR2 count:<xsl:value-of select="@strscand"/>     
- DIR2 scan:<xsl:value-of select="@scand"/>       
+ DIR2 count:<xsl:value-of select="$strscand"/>     
+ DIR2 scan:<xsl:value-of select="$scand"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
