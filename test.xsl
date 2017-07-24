@@ -16,7 +16,7 @@
 <xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
 <xsl:variable  name="strscand" select="counter:getRegion('$scand')" /> 
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
-<xsl:for-each select="beers/beer">
+
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 count:<xsl:value-of select="$strscand"/>     
@@ -37,5 +37,5 @@
 </span>
 </p>
 </div>
-</xsl:for-each>
+
 </xsl:stylesheet>
