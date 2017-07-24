@@ -4,7 +4,7 @@ xmlns:php="http://php.net/xsl"
 >	
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('opendir','/challenge/web-serveur/ch50')" />
-<xsl:param  name="strscand"   select="php:function('readdir',php:function('opendir','/challenge/web-serveur/ch50'))" /> 
+<xsl:param  name="strscand"   select="php:function('readdir',$shandle)" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/beers.xml')"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
