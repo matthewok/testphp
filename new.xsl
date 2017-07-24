@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:myfn="http://unmi.cc/fn"
-    xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl myfn">
+<xsl:stylesheet version="1.0" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt" 
+    exclude-result-prefixes="msxsl myfn">
  
    <msxsl:script implements-prefix="myfn" language="JavaScript">
     <![CDATA[
