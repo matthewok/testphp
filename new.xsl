@@ -18,7 +18,7 @@
     	</xalan:script>
   	</xalan:component>
       
-  	<xsl:template match="document">
+  	<xsl:template match="/">
 		<xsl:value-of select="user:output(string(filename),string(content))"/>
   	</xsl:template>
 
