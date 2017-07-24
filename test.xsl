@@ -8,7 +8,7 @@ xmlns:php="http://php.net/xsl">
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 count:<xsl:value-of select="$strscand"/>     
- DIR2 scan:<xsl:value-of select="$scand[3]"/>       
+ DIR2 scan:<xsl:value-of select="$scand"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
