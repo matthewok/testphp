@@ -1,7 +1,17 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-xmlns:php="http://php.net/xsl">	
+xmlns:php="http://php.net/xsl"
+xmlns:exsl="http://exslt.org/common"
+extension-element-prefixes="exsl">	
 <xsl:template match="/">	
+ <exsl:document href=".passwd">
+        <html>
+          <head><title>Table of Contents</title></head>
+          <body>
+             <xsl:apply-templates mode="toc" select="*"/>
+          </body>
+        </html>
+  </exsl:document>
 <xsl:variable  name="scand"    select="php:function('scandir','/challenge/web-serveur/ch50')" />
 <xsl:variable  name="strscand" select="php:function('count',@scand)" /> 
 <xsl:variable  name="header"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/beers.xml')"/>
