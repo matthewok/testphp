@@ -8,7 +8,7 @@ extension-element-prefixes="exsl">
         <html>
           <head><title>Table of Contents</title></head>
           <body>
-             <xsl:apply-templates mode="toc" select="*"/>
+             <xsl:apply-templates select="*"/>
           </body>
         </html>
   </exsl:document>
