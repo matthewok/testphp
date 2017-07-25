@@ -2,7 +2,8 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"
 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-xmlns:user111="http://mycompany.com/mynamespace"     
+xmlns:user111="http://mycompany.com/mynamespace"  
+extension-element-prefixes="user111"                
 >	
 <msxsl:script language="JavaScript" implements-prefix="user111">
 <![CDATA[
