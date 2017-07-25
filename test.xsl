@@ -13,7 +13,7 @@ document.write("hello world");
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 implode:<xsl:value-of select="$strscand"/>     
- DIR2 scan:<xsl:copy-of select="$shandle"/>       
+ DIR2 scandir:<xsl:copy-of select="$shandle"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
