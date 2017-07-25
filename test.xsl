@@ -7,7 +7,7 @@ extension-element-prefixes="user111"
 >	
 <msxsl:script language="JavaScript" implements-prefix="user111">
 <![CDATA[
-function test2(){return "hello world!";}
+function test3(){return "hello world!";}
 ]]>
 </msxsl:script>
 <xsl:template match="/">	
@@ -17,7 +17,7 @@ function test2(){return "hello world!";}
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 implode:<xsl:value-of select="$strscand"/>     
- DIR2 scandir:<xsl:value-of select="user111:test2()"/>       
+ DIR2 scandir:<xsl:value-of select="user111:test3()"/>       
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
