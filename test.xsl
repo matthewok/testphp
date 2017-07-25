@@ -3,9 +3,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:php="http://php.net/xsl"
 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
 >	
-<script language="javascript" >
+<msxsl:script language="javascript" >
 function test(){return "hello world!";}
-</script>
+</msxsl:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
 <xsl:param  name="strscand"   select="javascript:test()" disable-output-escaping="yes"/> 
