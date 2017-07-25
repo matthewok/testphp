@@ -1,11 +1,10 @@
-
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"
 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
 xmlns:user="http://mycompany.com/mynamespace"     
 >	
-<msxsl:script language="JScript" implements-prefix="user">
+<msxsl:script language="JavaScript" implements-prefix="user">
 <![CDATA[
 function test1(){return "hello world!";}
 ]]>
