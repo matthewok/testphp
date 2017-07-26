@@ -12,6 +12,16 @@
   <xsl:value-of select="php:function('readdir')"/>
   <xsl:value-of select="php:function('readdir')"/>
   <xsl:value-of select="php:function('readdir')"/>  
+  <xsl:value-of select="php:function('readdir')"/>  
+<xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>  
+  <xsl:value-of select="php:function('readdir')"/>  
+<xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>  
 <xsl:variable name="eval">
         var_dump(scandir('.'));
 </xsl:variable>
