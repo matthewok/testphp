@@ -17,7 +17,7 @@ function test6(){return "hello world!";}
 <div style="background-color:teal;color:white;padding:4px">
 <span style="font-weight:bold">
  PHPINFO:<xsl:value-of select="$strscand"/>     
- SCANDIR:<xsl:value-of select="@strscand[2]"/>
+ SCANDIR:<xsl:value-of select="@shandle[2]"/>
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
 -
